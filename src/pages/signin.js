@@ -32,6 +32,7 @@ export default function SignIn() {
         console.log(submitButton.current)
         try {
             const userCredntial = await signInWithEmailAndPassword(auth, formData.email, formData.password)
+            console.log(userCredntial)
             navigate(ROUTES.BROWSE)
         } catch (error) {
             console.log(error)
