@@ -2,12 +2,12 @@
 import HeroSlideImage1 from '../assets/images/sections/section-header-slide1.png'
 import HeroSlideImage2 from '../assets/images/sections/section-header-slide2.png'
 import HeroSlideImage3 from '../assets/images/sections/section-header-slide3.png'
-import AppMobileImage from '../assets/images/sections/section-app.PNG'
-import BenefitsImage from '../assets/images/sections/section-benefits.png'
+
 import FooterImage from '../assets/images/sections/section-footer.png'
 
 
 // Sections Contents
+
 //section--hero
 export const HeroData = {
     title: 'عن تطبيق Spacetoon Go',
@@ -17,6 +17,48 @@ export const HeroData = {
     slide2: <HeroSlideImage2 />,
     slide3: <HeroSlideImage3 />
 };
+
+
+export const FooterData = {
+    title: 'SpacetoonGo تابع',
+    logo: 'https://spacetoongo.com/assets/img/inverse-logo.svg',
+    ImageChampion: <FooterImage />,
+    items: [
+        {
+            text: 'من نحن ؟',
+            link: ''
+        },
+        {
+            text: 'لماذا سبيستون غو ؟',
+            link: ''
+        },
+        {
+            text: 'سياسة الخصوصية',
+            link: ''
+        },
+        {
+            text: 'شروط الاستخدام',
+            link: ''
+        },
+        {
+            text: 'سياسة الاشتراك و التسديد',
+            link: ''
+        },
+        {
+            text: 'مركز المساعدة',
+            link: ''
+        },
+        {
+            text: 'اتصل بنا',
+            link: ''
+        },
+        {
+            text: 'الأسئلة الشائعة',
+            link: ''
+        },
+    ]
+};
+
 
 //section--app
 //section--statistic

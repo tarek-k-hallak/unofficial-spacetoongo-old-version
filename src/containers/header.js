@@ -74,33 +74,31 @@ export default function Header({ showContent = true }) {
 
                 {/*===Mobile Slidnav========================*/}
                 {showContent ?
-                    <div>
-                        <nav className='z-30 lg:hidden fixed top-0 right-0 h-full'>
-                            <ul ref={sidenav} className='w-screen h-full -translate-x-full bg-primary bg-opacity-95 pt-32 pb-8 
+                    <nav className='z-30 lg:hidden fixed top-0 right-0 h-full'>
+                        <ul ref={sidenav} className='w-screen h-full -translate-x-full bg-primary bg-opacity-95 pt-32 pb-8 
                         transition duration-500 ease-in-out transform 
                         overflow-y-auto flex flex-col justify-between items-center'
-                                onClick={() => {
-                                    setIsToggleWindow(!isToggleWindow)
-                                    ToggleHamburger(hs1, hs2, hs3, isToggleWindow, sidenav)
-                                }}>
-                                <li className='slidenav-items'>
-                                    <a href="#about-app">  تحميل التطبيق</a>
-                                </li>
-                                <li className='slidenav-items'>
-                                    <a href="#features"> الميزات</a>
-                                </li>
-                                <li className='slidenav-items'>
-                                    <a href="#benefits"> تحكم كامل للاهل</a>
-                                </li>
-                                <li className='slidenav-items'>
-                                    <a href="#plans"> الباقات</a>
-                                </li>
-                                <li className='slidenav-items'>
-                                    <a href="#planets"> الكواكب</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                            onClick={() => {
+                                setIsToggleWindow(!isToggleWindow)
+                                ToggleHamburger(hs1, hs2, hs3, isToggleWindow, sidenav)
+                            }}>
+                            <li className='slidenav-items'>
+                                <a href="#about-app">  تحميل التطبيق</a>
+                            </li>
+                            <li className='slidenav-items'>
+                                <a href="#features"> الميزات</a>
+                            </li>
+                            <li className='slidenav-items'>
+                                <a href="#benefits"> تحكم كامل للاهل</a>
+                            </li>
+                            <li className='slidenav-items'>
+                                <a href="#plans"> الباقات</a>
+                            </li>
+                            <li className='slidenav-items'>
+                                <a href="#planets"> الكواكب</a>
+                            </li>
+                        </ul>
+                    </nav>
                     : null
                 }
             </section >

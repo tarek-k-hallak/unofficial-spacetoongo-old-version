@@ -41,7 +41,7 @@ export default function SignIn() {
     return (
         <div className='font-primary bg-primary '>
             <Header showContent={false} />
-            <div className='relative max-w-[80%] m-auto pt-[120px] -mb-40'>
+            <div className='relative max-w-[75%] m-auto pt-[120px] -mb-20'>
                 <section>
                     <div className='flex justify-between m-auto bg-background rounded-[50px] mx-4 border-2 border-white'>
                         <div className='flex flex-col mx-auto w-[400px] justify-between h-[600px]'>

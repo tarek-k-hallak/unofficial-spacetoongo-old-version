@@ -20,9 +20,9 @@ export default function Hero({ content = true }) {
                         </div>
                         {/* Auto Images Slide */}
                         <div className='z-0 flex flex-row w-[50%] gap-4 rotate-[25deg] absolute -top-40 lg:top-0 right-[750px] lg:right-0 opacity-30 lg:opacity-100 '>
-                            <img className='w-[225px] h-[1500px] slider1' src={HeroData.slide1.type} alt="slide image" />
-                            <img className='w-[225px] h-[1100px] slider2' src={HeroData.slide2.type} alt="slide image" />
-                            <img className='w-[225px] h-[950px] slider3' src={HeroData.slide3.type} alt="slide image" />
+                            <img className='w-[225px] h-[1500px] slider1' src={HeroData.slide1.type} alt="slide1" />
+                            <img className='w-[225px] h-[1100px] slider2' src={HeroData.slide2.type} alt="slide2" />
+                            <img className='w-[225px] h-[950px] slider3' src={HeroData.slide3.type} alt="slide3" />
                         </div>
                     </div>
                     : null
