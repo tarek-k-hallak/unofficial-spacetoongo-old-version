@@ -2,7 +2,7 @@ import React from 'react'
 import { FooterData } from '../fixtures/HomeData'
 export default function Footer({ decor = true, ...restProps }) {
     return (
-        <footer className=' background-image w-full min-h-[550px] flex'>
+        <footer className=' background-image w-full min-h-[550px] flex flex-col justify-between'>
             {decor ?
                 <div className='decor'>
                     <svg className='w-full h-[100px]'>
@@ -12,7 +12,7 @@ export default function Footer({ decor = true, ...restProps }) {
                 : null
             }
 
-            <div className=' flex flex-row-reverse lg:justify-between items-end max-w-[1200px] mx-auto'>
+            <div className='flex flex-row-reverse lg:justify-between items-end max-w-[1200px] mx-auto'>
                 <div className='flex flex-col items-end text-white'>
                     <div className='flex flex-row-reverse items-center mx-auto'>
                         <div>
