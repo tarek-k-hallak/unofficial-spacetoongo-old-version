@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar Style */
+.nav-items{
+    @apply font-bold text-base text-black transition duration-150 hover:text-hover-1 cursor-pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slidenav-items{
+    @apply text-lg text-white ease-in-out hover:text-hover-2
+    w-[50%] text-center pb-4 border-b-[1px] border-white;
+    transition: transform 0.3s, opacity 0.3s, color 0.5s;
+}
+.hamburger-slice{
+    @apply w-full h-1 bg-primary rounded-full transition duration-500 ease-in-out;
+}
+
+
+/* Hero Slide Animation */
+.slider1{
+    animation: slideAnimation 4s linear infinite;
+}
+.slider2{
+    animation: slideAnimation 6s linear infinite;
+}
+.slider3{
+    animation: slideAnimation 8s linear infinite;
+}
+
+.slider1:hover, .slider2:hover, .slider3:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.background-image{
+    background: url("https://spacetoongo.com/assets/img/bg/footer-bg-lg.svg") no-repeat;
+    background-size: cover;
+}
+
+@keyframes slideAnimation {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(-250px*1));
+    }
 }
