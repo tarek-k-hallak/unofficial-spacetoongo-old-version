@@ -4,12 +4,12 @@
 
 /* Navbar Style */
 .nav-items{
-    @apply font-bold text-base text-black transition duration-150 hover:text-hover-1 cursor-pointer;
+    @apply font-bold text-base  transition duration-150 hover:text-gray-200 cursor-pointer;
 }
 
 .slidenav-items{
-    @apply text-lg text-white ease-in-out hover:text-hover-2
-    w-[50%] text-center pb-4 border-b-[1px] border-white;
+    @apply text-lg ease-in-out hover:text-hover-2
+    w-[50%] text-center pb-1 border-b-[1px] border-white;
     transition: transform 0.3s, opacity 0.3s, color 0.5s;
 }
 .hamburger-slice{
@@ -32,12 +32,6 @@
     animation-play-state: paused;
     cursor: pointer;
 }
-
-.background-image{
-    background: url("https://spacetoongo.com/assets/img/bg/footer-bg-lg.svg") no-repeat;
-    background-size: cover;
-}
-
 @keyframes slideAnimation {
     0%{
         transform: translateY(0);
@@ -45,4 +39,18 @@
     100%{
         transform: translateY(calc(-250px*1));
     }
+}
+
+
+
+.footer-background-image{
+    background: url("https://spacetoongo.com/assets/img/bg/footer-bg-lg.svg") no-repeat;
+    background-size: cover;
+}
+
+
+
+.hero-background-image{
+    background: url("./assets/images/sections/hero.jpg") no-repeat;
+    background-size: cover;
 }

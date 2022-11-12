@@ -39,24 +39,6 @@ export function SignUpContainer() {
         }
     }
 
-    // const handleSignUp = async (event) => {
-    //     event.preventDefault();
-
-    //     createUserWithEmailAndPassword(auth, formData.email, formData.password)
-    //         .then(result =>
-    //             result.user
-    //                 . ({
-    //                     displayName: formData.firstName,
-    //                     photoURL: Math.ceil(Math.random() * 5)
-    //                 })
-    //         )
-    //         .then(() => {
-    //             setError('')
-    //             history.push(ROUTES.BROWSE)
-    //         })
-    //         .catch(error => console.log(error))
-    // }
-
     return (
         <Form>
             <Form.Title>Sign Up</Form.Title>

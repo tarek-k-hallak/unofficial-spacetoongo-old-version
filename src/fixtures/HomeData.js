@@ -2,11 +2,14 @@
 import HeroSlideImage1 from '../assets/images/sections/section-header-slide1.png'
 import HeroSlideImage2 from '../assets/images/sections/section-header-slide2.png'
 import HeroSlideImage3 from '../assets/images/sections/section-header-slide3.png'
-
 import FooterImage from '../assets/images/sections/section-footer.png'
 
 
 // Sections Contents
+//section--header
+export const HeaderData = {
+
+};
 
 //section--hero
 export const HeroData = {
@@ -18,7 +21,14 @@ export const HeroData = {
     slide3: <HeroSlideImage3 />
 };
 
+//section--app
+//section--statistic
+//section--features
+//section--benefits
+//section--plans
+//section--planets
 
+//section--footer
 export const FooterData = {
     title: 'SpacetoonGo تابع',
     logo: 'https://spacetoongo.com/assets/img/inverse-logo.svg',
@@ -58,11 +68,3 @@ export const FooterData = {
         },
     ]
 };
-
-
-//section--app
-//section--statistic
-//section--features
-//section--benefits
-//section--plans
-//section--planets
