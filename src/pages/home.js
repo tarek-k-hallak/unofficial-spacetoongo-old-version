@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <div className='font-primary bg-background'>
-            <HeaderContainer isSignedIn={false} />
+            <HeaderContainer />
             <HeroContainer />
             <main className='relative max-w-[1200px] m-auto bg-white -my-[200px] h-[500px] '>
                 <section className='about--app ' >

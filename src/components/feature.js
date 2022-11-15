@@ -10,7 +10,7 @@ export default function Feature({ children, ...restProps }) {
 
 Feature.Container = function FeatureContainer({ children, ...restProps }) {
     return (
-        <div className="container flex max-w-[1200px] m-auto justify-end lg:justify-start">
+        <div className="flex justify-center lg:justify-start m-auto max-w-[1200px]">
             {children}
         </div>
     )
@@ -26,7 +26,7 @@ Feature.Lable = function FeatureLable({ children, style, ...restProps }) {
 
 Feature.Title = function FeatureTitle({ ...restProps }) {
     return (
-        <h1 className='text-[55px] lg:text-[80px] leading-tight text-white font-bold mt-24'>
+        <h1 className='text-[40px] lg:text-[80px] leading-tight text-white font-bold lg:mt-[40px]'>
             {HeroData.title}
         </h1>
     )
@@ -34,7 +34,7 @@ Feature.Title = function FeatureTitle({ ...restProps }) {
 
 Feature.SubTitle = function FeatureSubTitle({ ...restProps }) {
     return (
-        <p className='text-lg text-white font-bold pt-12 pl-8'>
+        <p className='text-lg text-white font-bold pt-8'>
             {HeroData.subtitle}
         </p>
     )
@@ -43,7 +43,7 @@ Feature.SubTitle = function FeatureSubTitle({ ...restProps }) {
 
 Feature.Button = function FeatureButton({ ...restProps }) {
     return (
-        <button className='bg-gray-100 text-primary font-bold text-xl w-60 lg:self-center self-end h-16 rounded-full mt-12'>
+        <button className='w-40 h-12 mx-auto bg-white text-primary font-bold text-lg lg:self-center self-end rounded-full mt-8'>
             {HeroData.buttonText}
         </button>
     )

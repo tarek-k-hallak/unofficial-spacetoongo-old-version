@@ -8,8 +8,7 @@
 }
 
 .slidenav-items{
-    @apply text-lg ease-in-out hover:text-hover-2
-    w-[50%] text-center pb-1 border-b-[1px] border-white;
+    @apply text-sm text-white text-right mt-2 mr-2 pb-2 w-[95%] ease-in-out hover:text-hover-2 border-b-[1px] border-white last-of-type:border-0;
     transition: transform 0.3s, opacity 0.3s, color 0.5s;
 }
 .hamburger-slice{
@@ -42,12 +41,10 @@
 }
 
 
-
 .footer-background-image{
     background: url("https://spacetoongo.com/assets/img/bg/footer-bg-lg.svg") no-repeat;
     background-size: cover;
 }
-
 
 
 .hero-background-image{

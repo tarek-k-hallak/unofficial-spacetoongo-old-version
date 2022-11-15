@@ -2,10 +2,9 @@ import { Link } from 'react-router-dom'
 import * as ROUTES from '../constants/routers'
 
 
-export default function NavBar({ children, isSignedIn = false, ...restProps }) {
+export default function NavBar({ children, ...restProps }) {
     return (
-        <div className={`flex flex-row-reverse items-center justify-between w-full px-8 max-h-[70px] 
-        ${isSignedIn ? "bg-primary" : "bg-white"}`}>
+        <div className={`flex flex-row-reverse items-center justify-center lg:justify-around   w-full px-8 max-h-[70px]`}>
             {children}
         </div>
     )
@@ -14,7 +13,7 @@ export default function NavBar({ children, isSignedIn = false, ...restProps }) {
 
 NavBar.Logo = function HeaderLogo({ ...restProps }) {
     return (
-        <div className='mt-[40px] pt-[2px] lg:mt-[55px] lg:pt-[20px]'>
+        <div className='z-40 mt-[40px] pt-[2px] lg:mt-[55px] lg:pt-[20px]'>
             <Link to={ROUTES.HOME} >
                 <img className="w-[120px]" src="https://spacetoongo.com/assets/img/logo.svg" alt="STGO"></img>
             </Link>
@@ -22,9 +21,9 @@ NavBar.Logo = function HeaderLogo({ ...restProps }) {
     )
 }
 
-NavBar.Content = function HeaderContent({ isSignedIn, ...restProps }) {
+NavBar.Content = function HeaderContent({ ...restProps }) {
     return (
-        <nav className={`hidden justify-between items-center w-full lg:flex lg:w-auto ${isSignedIn ? "text-white" : "text-black"}`}  >
+        <nav className={`hidden justify-between items-center w-full lg:flex lg:w-auto`}  >
             <ul className='flex flex-col-reverse md:flex-row-reverse p-4 mt-4 md:mt-0'>
                 <li className='nav-items ml-[34px]'>
                     <a href="#about-app"> تحميل التطبيق</a>
@@ -46,10 +45,9 @@ NavBar.Content = function HeaderContent({ isSignedIn, ...restProps }) {
     )
 }
 
-NavBar.SigninButton = function HeaderSigninButton({ isSignedIn, ...restProps }) {
+NavBar.SigninButton = function HeaderSigninButton({ ...restProps }) {
     return (
-        <button className={`font-bold text-sm w-[135px] h-[35px] rounded-full hover:opacity-80 transition duration-300 
-                    ${isSignedIn ? "text-primary bg-white" : "text-white bg-primary"}`}>
+        <button className={`hidden lg:block font-bold text-sm w-[135px] h-[35px] rounded-full hover:opacity-80 transition duration-300 bg-primary text-white`}>
             <Link to={ROUTES.SIGN_IN}>
                 تسجيل الدخول
             </Link>
