@@ -31,9 +31,9 @@ export default function SignIn() {
         submitButton.current.innerText = SignInData.SignInButtonLoading
         try {
             await signInWithEmailAndPassword(auth, formData.email, formData.password)
-            navigate(ROUTES.BROWSE)
+            navigate(ROUTES.CHOSE_PROFILES)
         } catch (error) {
-            console.log(error)
+            console.log("sign in error: " + error)
         }
     }
 

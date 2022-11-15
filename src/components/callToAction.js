@@ -2,7 +2,7 @@ import { HeroData } from '../fixtures/BrowserData'
 
 export default function CallToAction({ children, ...restProps }) {
     return (
-        <div className="flex justify-end items-center hero-background-image h-[700px]">
+        <div className="flex justify-end items-center hero-background-image h-[600px]">
             {children}
         </div>
     )
@@ -10,7 +10,7 @@ export default function CallToAction({ children, ...restProps }) {
 
 CallToAction.Card = function CallToActionCard({ children, ...restProps }) {
     return (
-        <div className="flex flex-col w-[30%] mr-4 text-right items-end text-white ">
+        <div className="hidden lg:flex flex-col w-[30%] mr-4 text-right items-end text-white ">
             {children}
         </div>
     )
